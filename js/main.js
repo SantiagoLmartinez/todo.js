@@ -21,7 +21,7 @@ const addTodo = (todo) => {
 }
 
 const printTodo = () =>{
-    localStorage.setItem('todosdb', JSON.stringify(todosdb))
+    // localStorage.setItem('todosdb', JSON.stringify(todosdb))
     // localStorage.setItem('carrito', JSON.stringify(carrito))
 
     // limpiamos el _todoListContainer
@@ -80,10 +80,10 @@ document.addEventListener('click', (e) =>{
 
 // events 3
 
-document.addEventListener('DOMContentLoaded',(e)=>{
-    const storage = JSON.parse(localStorage.getItem('todosdb'))
-    if(storage){
-        todosdb = storage;
-        printTodo()
-    }
-})
+// document.addEventListener('DOMContentLoaded',(e)=>{
+//     const storage = JSON.parse(localStorage.getItem('todosdb'))
+//     if(storage){
+//         todosdb = storage;
+//         printTodo()
+//     }
+// })
